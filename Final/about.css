@@ -1,0 +1,80 @@
+/*CSS Document*/
+
+/*CSS Reset*/
+/* This sets all of the html tags to 0 margin and padding. */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, u, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	line-height: 1em;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/*You can take off all indents and padding on lists and list items, but I find this to be more trouble than it's worth. I'd rather have lists come with proper indents and bullets. I can always take those off when I need to use a list for navigation 
+ul, ol, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	line-height: 1em;
+	vertical-align: baseline;	
+}
+ol, ul {
+	list-style: none;
+}
+*/
+
+/* sets padding, margin and list-style to 0 and none for all lists inside nav elements */
+ nav ul, nav ul li{
+	list-style:none;
+	padding:0;
+	margin:0;	 
+ }
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* sets the box-sizing model to border-box, which allows you to add padding to the block-level element (div, section, article, whatever) without having to adjust the width of columns to account for them. */
+*, *:before, *:after {
+   -moz-box-sizing: border-box; 
+   -webkit-box-sizing: border-box; 
+   box-sizing: border-box;
+ }
+img {
+	max-width: 100%;/* all images won't get bigger than it's original size but will shrink as needed with the window*/
+}
+/* End CSS Reset */
+
+/*Styles for the About page*/
+#content {
+	background-color: #464646;
+	width: 80%;
+	float: left;
+	margin: 20px 10% 20px 10%;
+}
+#content .about h1 {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 150%;
+	color: #ffffff;
+}
+#content .about p {
+	font-size: 16px;
+	line-height: 150%;
+	padding: 15px;
+	color: #ffffff;
+}
